@@ -1,21 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
-body{    
+body{
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(40deg, rgb(99, 85, 85), purple, rgb(27, 26, 26));
+    background: linear-gradient(40deg, rgb(99, 85,85),purple,rgb(27,26,26));
 }
 
 .menu{
     position:relative;
-    width:280px;
+    width: 280px;
     height: 280px;
     background: rgba(0,0,0, .1);
     border-radius: 50%;
@@ -25,60 +25,63 @@ body{
 }
 
 .menu .toggle{
-    position:relative;
+    position: relative;
     width:60px;
     height: 60px;
     background: white;
     border-radius: 50%;
-    box-shadow: 0 3px 4px rgba(0,0,0,0.16), 0 0 30px white;
+    box-shadow: 0 3px 4px rgba(0,0,0, .16), 0 0 30px white;
     display: flex;
-    color:#222;
-    cursor:pointer;
-    font-size: 2em;
     justify-content: center;
     align-items: center;
-    transition:1.23s;
+    cursor: pointer;
+    color: #222;
+    font-size: 2em;
+    transition:  1.2s;
 }
 
 .menu.active .toggle{
     transform: rotate(360deg);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15), 0 0 0 2px #222, 0 0 0 8px #fff;
+    box-shadow: 0 6px 8px rgba(0,0,0,.15), 0 0 0 2px #222, 0 0 0 8px #fff;
 }
 
 .menu li{
     list-style-type: none;
-    position:absolute;
+    position: absolute;
     left: 0;
     transition: .5s;
-    transform: rotate(calc(360deg/8 * var(--i)));
-    transform-origin: 140px ;
+    transform: rotate(calc(360deg/8* var(--b)));
+    transform-origin: 140px;
     scale: 0;
-    transition-delay: calc(0.1s * var(--i));
+    transition-delay: calc(0.1s * var(--b));
 }
 
 .menu.active li{
-    scale:1;
+    scale: 1;
 }
 
 .menu li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:50px;
-    height:50px;
+    width: 50px;
+    height: 50px;
     position: relative;
-    display: flex;
     font-size: 2em;
     background-color: #fff;
     padding: 10px;
     border-radius: 50%;
-    transform: rotate(calc(360deg/-8 * var(--i)));
-    color: var(--clr);
+    transform: rotate(calc(360deg/-8 * var(--b)));
+    color:var(--clr);
     box-shadow: 0 0 20px white;
 }
 
 .menu li a:hover{
+    border: 2px solid var(--clr);
+    box-shadow: 0 0 20px purple;
     transition: .2s;
-    border: 2px solid purple;
-    box-shadow: 0 0 20px purple, ;
 }
+
+/* WE'RE DONE!! */
+
+/* THANK YOU FOR WATCHING, PLEASE SUBSCRIBE FOR MORE. */
